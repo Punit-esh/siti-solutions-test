@@ -1,0 +1,124 @@
+.usertable {
+    min-width: 990px;
+    margin-top: 26px;
+    margin-inline: 10px;
+    background: #ffffff;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    .table_heading {
+        padding: 20px 10px;
+        margin: auto;
+        font-size: 12px;
+        line-height: 14px;
+        color: #7d7d7d;
+        > div {
+            display: inline-block;
+            text-align: center;
+            // width: 100%;
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(5),
+            &:nth-child(7) {
+                width: 10%;
+            }
+            //     width:10%;
+
+            // }
+            &:nth-child(4),
+            &:nth-child(6),
+            &:nth-child(8) {
+                width: 15%;
+            }
+            &:last-child {
+                color: transparent;
+                width: 5%;
+            }
+        }
+    }
+    .table_body {
+        padding: 20px 10px;
+        padding-top: 10px;
+        text-align: center;
+        // display: flex;
+        border-top: 1px solid #e5e5e5;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        color: #7d7d7d;
+        // width: 95%;
+        img {
+            height: 35px;
+            transform: translateY(7px);
+        }
+        > .table_body_tabs {
+            height: 45px;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            > div {
+                display: inline-block;
+                text-align: center;
+            }
+            .w-5 {
+                width: 5%;
+            }
+            .w-10 {
+                width: 10%;
+                &.email {
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 400;
+                    text-decoration: underline;
+                }
+            }
+            .w-15 {
+                width: 15%;
+            }
+            .dots {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                width: fit-content;
+                img {
+                    cursor: pointer;
+                    transform: translateY(0px);
+
+                    height: 16px;
+                }
+                .dots_menu {
+                    background: #fff;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 4px;
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    right: 140%;
+                    width: 130px;
+                    // height: 66px;
+                    text-align: left;
+                    font-size: 12px;
+                    line-height: 14px;
+                    // align-items: flex-start;
+                    &.active {
+                        display: unset !important;
+                    }
+                    img {
+                        height: 12px;
+                        margin-right: 5px;
+                    }
+                    > div {
+                        cursor: pointer;
+                        padding: 10px 20px;
+                        margin: auto;
+                        > div {
+                            margin-bottom: 5px;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

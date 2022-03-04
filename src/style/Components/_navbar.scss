@@ -1,0 +1,64 @@
+.navbar{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 61px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(145, 145, 145);
+    .navbar_title{
+        padding-left: 16px;
+        margin-left: 66px;
+        font-weight: 400;
+        font-size: 20px;
+        margin-right: auto;
+    }
+    .navbar_search{
+        margin-right: 11px;
+        width: 362px;
+        height: 31px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #BCBCBC;
+        overflow: hidden;
+        border-radius: 6px;
+
+        img{
+            margin-inline: 11px;
+            height: 16px;
+        }
+        input{
+            width: 351px;
+            border: 0;
+            height: 100%;
+            &::placeholder{
+                color: #BCBCBC;
+            }
+            &:focus-visible{
+                outline: 0;
+            }
+        }
+        
+    }
+    .navbar_addCustomer{
+        background: #000;
+        margin-right: 25px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 138px;
+        color:#fff;
+        font-size: 12px;
+        line-height: 14px;
+        height: 31px;
+        border-radius: 6px;
+        img{
+            border-radius: 2px;
+            height: 10px;
+            padding: 3PX;
+            background: #E5E5E5;
+            // padding: ;
+        }
+    }
+}

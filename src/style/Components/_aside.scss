@@ -1,0 +1,20 @@
+.aside{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    background: #000;
+    .aside_tabs{
+        margin-top: 135px;
+        img{
+            cursor: pointer;
+            height:28px;
+            display: block;
+            margin-inline: 19px;
+            &:not(:first-child){
+
+                margin-top: 40px;
+            }
+        }
+    }
+}

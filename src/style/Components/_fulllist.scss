@@ -1,0 +1,236 @@
+.fulllist {
+    display: flex;
+    // >div{
+    //     display: inline-block;
+    // }
+    .left_div {
+        width: 25%;
+        .navbar_search.fulllist_search {
+            // margin-right: 11px;
+            // width: 100%;
+            height: 31px;
+            margin-inline: 10px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #bcbcbc;
+            overflow: hidden;
+            border-radius: 6px;
+
+            img {
+                margin-inline: 11px;
+                height: 16px;
+            }
+            input {
+                width: 351px;
+                border: 0;
+                height: 100%;
+                &::placeholder {
+                    color: #bcbcbc;
+                }
+                &:focus-visible {
+                    outline: 0;
+                }
+            }
+        }
+        .fulllist_userlist {
+            > .user_list_blocks {
+                padding-block: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                > img {
+                    transform: translateY(3px);
+                    height: 35px;
+                    margin-right: 14px;
+                }
+                .user_list_txt {
+                    width: 120px;
+                    .txt1 {
+                        font-size: 16px;
+                        line-height: 19px;
+                        font-weight: 700;
+                    }
+                    .txt2 {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+                &.active {
+                    background: #000;
+                    box-shadow: -10px 0px 0px 0px #000, 10px 0 0 0 #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .usertable {
+        min-width: unset;
+        width: 75%;
+        margin-top: 16px;
+        .usertable_nav {
+            font-size: 12px;
+            line-height: 14px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            > .usertable_nav_tabs {
+                width: 90%;
+                text-align: center;
+                padding-block: 20px;
+                margin-inline: 20px;
+                &.active {
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+        .usertable_nav_body {
+            >div{
+                display: none;
+            }
+            padding: 20px 50px;
+            font-size: 14px;
+            line-height: 17px;
+            color: #7d7d7d;
+            .input {
+                overflow: hidden;
+                display: flex;
+                border: 0.5px solid #7d7d7d;
+                border-radius: 5px;
+                input {
+                    border: 0;
+                    width: 100%;
+                    padding: 5px 10px;
+                    // margin-inline: 10px;
+                    &::placeholder {
+                        color: #bcbcbc;
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                    &.cardtype {
+                        text-align: right;
+                    }
+                    &:focus-visible {
+                        outline: 0;
+                    }
+                }
+                &.creditcard {
+                    padding-inline: 10px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .creditno {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+            }
+            .p-10-inline {
+                padding-inline: 15px;
+            }
+            .w-33 {
+                width: 33%;
+            }
+            .w-50 {
+                width: 50%;
+            }
+            .w-66 {
+                width: 66.66%;
+            }
+            .w-100 {
+                width: 100%;
+            }
+            .d-flex {
+                display: flex;
+            }
+            .justify-between {
+                justify-content: space-between;
+            }
+            .d-center {
+                justify-content: center;
+                align-items: center;
+            }
+            .d-flex-column {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            * {
+                // border:1px solid red;
+            }
+            .usertable_nav_body1 {
+                height: 200px;
+            }
+            .usertable_nav_body1,
+            .usertable_nav_body2 {
+                display: flex;
+                img {
+                    width: 130px;
+                }
+            }
+            .usertable_nav_body2 {
+                .input {
+                    height: 60px;
+                    // input{
+                    //     height: 100%;
+                    // }
+                    textarea {
+                        color: #bcbcbc;
+                        width: 100%;
+                        height: 100%;
+                        border: 0;
+                        padding: 5px 10px;
+                        &:focus-visible {
+                            outline: 0;
+                        }
+                    }
+                }
+                .sum_icon {
+                    height: 16px;
+                    width: 16px;
+                }
+                .usertable_body_label_bottom {
+                    margin-top: 5px;
+                    img {
+                        height: 12px;
+                        width: 12px;
+                        margin-left: 5px;
+                    }
+                    .me-auto {
+                        margin-right: auto;
+                    }
+                }
+            }
+            .usertable_body_label {
+                margin-bottom: 5px;
+            }
+            .usertable_bottom_nav {
+                font-size: 12px;
+                    line-height: 14px;
+                    .go_back{
+                        cursor: pointer;
+                    }
+                img {
+                    height: 12px;
+                }
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                padding-inline: 15px;
+                > * {
+                    margin-left: 24px;
+                }
+                button {
+                    height: 31px;
+                    background-color: #000;
+                    color: #fff;
+                    border-radius: 6px;
+                    border: 0;
+                    
+                    font-weight: 700;
+                    padding: 9px 17px;
+                }
+            }
+        }
+    }
+}
